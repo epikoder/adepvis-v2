@@ -140,10 +140,10 @@ func (a *Auth) CheckLoginStatus() (*AuthData, error) {
 
 func (a *Auth) Login(i LoginCredential) (interface{}, error) {
 	res, err := fetch.Post("/auth/login_officer", i, nil)
-	runtime.LogDebug(a.ctx, res.Status)
 	if err != nil {
 		return nil, err
 	}
+	runtime.LogDebug(a.ctx, res.Status)
 
 	defer res.Body.Close()
 	b, err := ioutil.ReadAll(res.Body)
