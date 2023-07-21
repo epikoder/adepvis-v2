@@ -1,7 +1,7 @@
 import { createTheme } from "@mui/material";
 
 const appName = "Adepvis";
-const apiURL = "https://adepvis.herokuapp.com";
+const apiURL = "http://164.92.137.74";
 
 const theme = createTheme({
   palette: {

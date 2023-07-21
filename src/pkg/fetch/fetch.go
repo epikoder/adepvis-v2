@@ -8,7 +8,8 @@ import (
 )
 
 var (
-	ApiUrl = "http://localhost:8081"
+	// ApiUrl = "http://localhost:8081"
+	ApiUrl = "http://164.92.137.74"
 )
 
 func Post(url string, body interface{}, headers map[string]string) (res *http.Response, err error) {
